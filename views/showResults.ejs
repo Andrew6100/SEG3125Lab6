@@ -1,0 +1,63 @@
+<html lang="en-US">
+<head>
+    <title>Lab 6 | Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>Names</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].name %></li>
+    <% } %>    
+    </ul>
+    <h2>Emails</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].email %></li>
+    <% } %>    
+    </ul>
+    <h2>Age</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].age %> :  <%= results[2][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Clear Pricing</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].pricing %> :  <%= results[3][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Favourite Subpage</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].favouriteSubpage %> :  <%= results[4][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Features Read</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].featuresRead %> :  <%= results[5][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Comments</h2>
+    <ul>
+    <% for (var i=0; i<results[6].length; i++){ %>
+        <li><%= results[6][i].comment %></li>
+    <% } %>    
+    </ul>
+    <h2>Purchase</h2>
+    <ul>
+    <% for (var i=0; i<results[7].length; i++){ %>
+        <li><%= results[7][i].purchase %> :  <%= results[7][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Rate</h2>
+    <ul>
+    <% for (var i=0; i<results[8].length; i++){ %>
+        <li><%= results[8][i].rate %> :  <%= results[8][i].count %></li>
+    <% } %>    
+    </ul>
+</body>
+</html>

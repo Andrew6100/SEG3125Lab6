@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Lab 6 | Tesla Questionaire </title>
+    <link type="text/css" rel="stylesheet" href="/lab6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap -->
+    <!-- form classes inspired by: https://getbootstrap.com/docs/4.1/components/forms/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+    
+
+
+</head>
+<body style="background-color: aliceblue;">
+
+  <div class="rightHome">
+    <a href="../../../index.html">Return to Labs</a>
+  </div>
+
+    <div class="container-fluid w-75">
+      <p class="display-2 text-center">
+        <b>Tesla Website Survey</b> <br>
+      </p>
+      <p class="text-primary text-center" style="font-size: 30px">
+        <a href="https://www.tesla.com/en_ca/cybertruck" rel="noopener noreferrer" target="_blank" class="website-link">Click here to visit the Tesla Website</a>
+      </p>
+      <a target="_blank" href="https://www.tesla.com/en_ca/cybertruck" rel="noopener noreferrer"><img src="/images/TeslaWebsite.PNG" title="Tesla Website"></a>
+      <hr/>
+      <form name="Tesla form">
+        <div class="form-group">
+          <h3>Personal Info</h3>
+          <input type="text" class="form-control" placeholder="Full Name" name="name" required><br>
+          <input type="text" class="form-control" placeholder="Email" name="email" required><br>
+          <input type="number" class="form-control" placeholder="Age" min="1" name="age" required><br>
+        </div>
+        <div class="form-group">
+          <h3>Question 1 - Was the pricing of our tesla vehicles clear to you?</h3>
+          <input type="radio" name="pricing" id="q1Yes" value="Yes" required>
+          <label class="form-check-label" for="q1Yes">Yes</label>
+          <br>
+          <input type="radio" name="pricing" id="q1No" value="No" required>
+          <label class="form-check-label" for="q1No">No</label>
+          <br>
+        </div>
+        <br>
+        <div class="form-group">
+          <h3>Question 2 - Which subpage was your favourite or that you found the most attractive?</h3>
+          <select name="favouriteSubpage" class="form-control" id="q2" required>
+            <option value ="Model S" selected="selected">Model S</option>
+            <option value ="Model 3" selected="selected">Model 3</option>
+            <option value ="Model X" selected="selected">Model X</option>
+            <option value ="Model Y" selected="selected">Model Y</option>
+            <option value ="CyberTruck" selected="selected">CyberTruck</option>
+            <option value ="Roadster" selected="selected">Roadster</option>
+            <option value ="Energy" selected="selected">Energy</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+          <h3>Question 3 - Please Check off all the features that you read about our Tesla Vehicles</h3>
+          <input type="checkbox" name="featuresRead" id="safety" value="Safety">
+          <label class="form-check-label" for="safety">Safety</label><br>
+          <input type="checkbox" name="featuresRead" id="performance" value="Performance">
+          <label class="form-check-label" for="performance">Performance</label><br>
+          <input type="checkbox" name="featuresRead" id="range" value="Range">
+          <label class="form-check-label" for="range">Range</label><br>
+          <input type="checkbox" name="featuresRead" id="autopilot" value="Autopilot">
+          <label class="form-check-label" for="autopilot">Autopilot</label><br>
+          <input type="checkbox" name="featuresRead" id="interior" value="Interior">
+          <label class="form-check-label" for="interior">Interior</label><br>
+          <input type="checkbox" name="featuresRead" id="exterior" value="Exterior">
+          <label class="form-check-label" for="exterior">Exterior</label><br>
+          <input type="checkbox" name="featuresRead" id="specs" value="Specs">
+          <label class="form-check-label" for="specs">Specs</label><br>
+          <input type="checkbox" name="featuresRead" id="order" value="Order">
+          <label class="form-check-label" for="order">Order</label><br>
+        </div>
+        <br>
+        <div class="form-group">
+          <h3>Question 4 - Please comment what you liked the least/most about our website</h3>
+          <textarea class="form-control" name="comment" rows="5" cols="30" placeholder="Please Type Here"></textarea><br>
+        </div>
+        <div class="form-group">
+          <h3>Question 5 - How likely are you to purchase a Tesla vehicle after visiting the webiste?</h3>
+          <input type="radio" name="purchase" id="veryLikely" value="Very Likely" required>
+          <label class="form-check-label" for="veryLikely">Very Likely</label><br>
+          <input type="radio" name="purchase" id="likely" value="Likely" required>
+          <label class="form-check-label" for="likely">Likely</label><br>
+          <input type="radio" name="purchase" id="neitherLikelyNorUnlikely" value="Neither likely nor unlikely" required>
+          <label class="form-check-label" for="neitherLikelyNorUnlikely">Neither likely nor unlikely</label><br>
+          <input type="radio" name="purchase" id="unlikely" value="Unlikely" required>
+          <label class="form-check-label" for="unlikely">Unlikely</label><br>
+          <input type="radio" name="purchase" id="veryUnlikely" value="Very unlikely" required>
+          <label class="form-check-label" for="veryUnlikely">Very unlikely</label><br>
+        </div>
+        <br>
+        <div class="form-group">
+          <h3>Question 6 - Please rate your experience using the Tesla Website</h3>
+          <input type="radio" name="rate" id="oneStar" value="1 Star" required>
+          <label class="form-check-label" for="oneStar">(1 Star)</label>
+          <span class="fa fa-star checked"></span>     
+          <br>
+          <input type="radio" name="rate" id="twoStar" value="2 Star" required>
+          <label class="form-check-label" for="twoStar">(2 Star)</label>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <br>
+          <input type="radio" name="rate" id="threeStar" value="3 Star" required>
+          <label class="form-check-label" for="threeStar">(3 Star)</label>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <br>
+          <input type="radio" name="rate" id="fourStar" value="4 Star" required>
+          <label class="form-check-label" for="fourStar">(4 Star)</label>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <br>
+          <input type="radio" name="rate" id="fiveStar" value="5 Star" required>
+          <label class="form-check-label" for="fiveStar">(5 Star)</label>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <br>
+        </div>
+        <br>
+        <button type="submit" id="bb" class="btn btn-lg btn-primary w-100">Submit</button>
+      </form>
+    </div>
+    <br>
+    <footer class="footer-copyright text-center py-3" style="color: grey;">
+      Website Designed by Andrew Le
+    </footer>
+    <script src="/assets/action.js"></script>
+</body>
+</html>

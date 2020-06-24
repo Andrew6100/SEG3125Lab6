@@ -1,0 +1,21 @@
+.text-primary {
+    font-size: 30px;
+}
+
+.container-fluid a img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 270px;
+    width: auto;
+}
+
+.container-fluid a img:hover {
+    transform: scale(1.1);
+}
+
+.rightHome{
+text-align: right;
+padding-right: 15px;
+}
